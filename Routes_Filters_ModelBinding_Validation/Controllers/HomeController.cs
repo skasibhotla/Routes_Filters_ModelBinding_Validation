@@ -10,16 +10,16 @@ namespace Routes_Filters_ModelBinding_Validation.Controllers
 {
     public class HomeController : Controller
     {
-        public IActionResult Index()
-        {
-            Student testStudent = new Student();
-            testStudent.FirstName = "Lakshmi";
-            testStudent.LastName = "Kasibhotla";
-            testStudent.UID = "xxxxxx";
-            testStudent.Grade = "Graduate";
+        //public IActionResult Index()
+        //{
+        //    Student testStudent = new Student();
+        //    testStudent.FirstName = "Lakshmi";
+        //    testStudent.LastName = "Kasibhotla";
+        //    testStudent.UID = "xxxxxx";
+        //    testStudent.Grade = "Graduate";
 
-            return View(testStudent);
-        }
+        //    return View(testStudent);
+        //}
 
         public IActionResult About()
         {

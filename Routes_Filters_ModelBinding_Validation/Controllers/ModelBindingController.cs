@@ -16,8 +16,22 @@ namespace Routes_Filters_ModelBinding_Validation.Controllers
       repository = repo;
     }
 
+        public ViewResult StudentIndex()
+        {
+            Student testStudent = new Student();
+            testStudent.FirstName = "Lakshmi";
+            testStudent.LastName = "Kasibhotla";
+            testStudent.UID = "xxxxxx";
+            testStudent.Grade = "Graduate";
 
-    public ViewResult Index(int id) => View(repository[id]);
+            return View(testStudent);
+        }
+        [HttpPost]
+        public ViewResult StudentIndex(Student student)
+        {
+            return View(student);
+        }
+        public ViewResult Index(int id) => View(repository[id]);
 
     public ViewResult IndexWithAddress(int id) => View(repository[id]);
 

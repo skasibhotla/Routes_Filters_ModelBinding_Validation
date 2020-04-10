@@ -7,6 +7,7 @@ namespace Routes_Filters_ModelBinding_Validation.Models
 {
     public class Student
     {
+        
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string UID { get; set; }
