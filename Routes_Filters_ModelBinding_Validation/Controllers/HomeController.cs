@@ -12,7 +12,13 @@ namespace Routes_Filters_ModelBinding_Validation.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            Student testStudent = new Student();
+            testStudent.FirstName = "Lakshmi";
+            testStudent.LastName = "Kasibhotla";
+            testStudent.UID = "xxxxxx";
+            testStudent.Grade = "Graduate";
+
+            return View(testStudent);
         }
 
         public IActionResult About()
